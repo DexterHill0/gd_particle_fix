@@ -7,7 +7,7 @@ int GameObject_setVisible(gd::GameObject* self, bool isVisible) {
 
     // scale the particles
     if (self->m_bUnkParticleSystem && self->m_pParticleSystem) {
-        self->m_pParticleSystem->setScale(self->getScale());
+        self->m_pParticleSystem->setScale(self->m_fScale);
     }
 
     return unk;
